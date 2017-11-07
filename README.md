@@ -1,9 +1,9 @@
 # laravel-php-template
 Template projeto com Laravel PHP
 
-alguns passos para instalar o PHP completo com laravel
+Alguns passos para instalar o PHP completo com laravel
 
-# atualizar repositorio para obter o PHP7.1
+# Atualizar repositorio para obter o PHP7.1
 
 sudo apt-get install -y python-software-properties
 
@@ -11,17 +11,19 @@ sudo add-apt-repository -y ppa:ondrej/php
 
 sudo apt update -y
 
+# Instalar o PHP
+
 sudo apt install php
 
-# pacotes adicionais necessarios para o PHP
+# Pacotes adicionais necessarios para o PHP
 
 sudo apt install php-mbstring php-xml php-zip php-mysql
 
-# instalar o MySQL
+# Instalar o MySQL
 
 sudo apt install mysql-server
 
-# instalar o Composer 
+# Instalar o Composer 
 
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 
@@ -31,24 +33,24 @@ php composer-setup.php
 
 php -r "unlink('composer-setup.php');"
 
-# mover e renomear o arquivo composer.phar para o diretorio /usr/local/bin/
+# Mover e renomear o arquivo composer.phar para o diretorio /usr/local/bin/
 
 sudo mv composer.phar /usr/local/bin/composer
 
-# instalar o laravel pelo composer 
+# Instalar o laravel pelo composer 
 
 composer global require "laravel/installer"
 
-# criar um link simbolico e mover para o diretorio /usr/local/bin/
+# Criar um link simbolico e mover para o diretorio /usr/local/bin/
 
 ln -s ~/.config/composer/vendor/laravel/installer/laravel laravel-link
  && sudo mv laravel-link /usr/local/bin/laravel
  
- # comando para criar um novo projeto com laravel 
+ # Comando para criar um novo projeto com laravel 
 
 laravel new nome-do-projeto
 
-# comando para iniciar o servidor 
+# Comando para iniciar o servidor 
 
 'primeiro deve acessar o diretorio do projeto'
 
