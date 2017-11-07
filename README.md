@@ -50,6 +50,54 @@ ln -s ~/.config/composer/vendor/laravel/installer/laravel laravel-link
 
 laravel new nome-do-projeto
 
+# Acessar o MySQL e criar um banco de dados para o projeto
+
+mysql -uroot -p
+Enter password: 'digite sua senha'
+
+mysql> CREATE DATABASE db-nome-do-projeto;
+
+mysql>exit
+
+# Configurar o arquivo .env 
+
+'abra o arquivo do diretorio do projeto'
+'verifique se a linha seguinte existe'
+
+APP_KEY=base64:KnHmKTnjKFF62MjuU0jJqCyamYzyb7dcYx0G9GWNPA8= << codigo hash exemplo
+
+'caso esteja assim'
+
+APP_KEY=base64:
+
+'primeiro deve acessar o diretorio do projeto'
+
+cd nome-do-projeto/
+
+'execute o comando para criar um novo hash'
+
+php artisan key:generate
+
+'agora altere as seguintes linhas do arquivo'
+
+DB_DATABASE=homestead
+DB_USERNAME=homestead
+DB_PASSWORD=secret
+
+'use como exemplo a configuração seguinte'
+
+DB_DATABASE=db-nome-do-projeto << aqui é nome do banco de dados
+DB_USERNAME=root               << aqui é o nome do usuraio do banco de dados
+DB_PASSWORD=root               << aqui é a senha do banco de dados
+
+[a]
+
+'depois disso use os passos seguintes'
+
+# Comando para adicionar as migrations do diretorio ./database/migrations/ no MySQL
+
+php artisan migrate
+
 # Comando para iniciar o servidor 
 
 'primeiro deve acessar o diretorio do projeto'
@@ -59,6 +107,9 @@ cd nome-do-projeto/
 'depois executar o comando com o php artisan'
 
 php artisan serve
+
+
+# Passos caso use baixar o template do repositório
 
 # Comando para reinstalar o composer/laravel no diretorio do projeto
 
