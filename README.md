@@ -62,6 +62,7 @@ mysql>exit
 # Configurar o arquivo .env 
 
 'abra o arquivo do diretorio do projeto'
+
 'verifique se a linha seguinte existe'
 
 APP_KEY=base64:KnHmKTnjKFF62MjuU0jJqCyamYzyb7dcYx0G9GWNPA8= << codigo hash exemplo
@@ -81,16 +82,19 @@ php artisan key:generate
 'agora altere as seguintes linhas do arquivo'
 
 DB_DATABASE=homestead
+
 DB_USERNAME=homestead
+
 DB_PASSWORD=secret
 
 'use como exemplo a configuração seguinte'
 
 DB_DATABASE=db-nome-do-projeto << aqui é nome do banco de dados
+
 DB_USERNAME=root               << aqui é o nome do usuraio do banco de dados
+
 DB_PASSWORD=root               << aqui é a senha do banco de dados
 
-[a]
 
 'depois disso use os passos seguintes'
 
