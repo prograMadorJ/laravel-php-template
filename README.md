@@ -53,7 +53,7 @@ laravel new nome-do-projeto
 # Acessar o MySQL e criar um banco de dados para o projeto
 
 mysql -uroot -p
-Enter password: 'digite sua senha'
+Enter password: 'digite a senha do banco de dados'
 
 mysql> CREATE DATABASE db-nome-do-projeto;
 
