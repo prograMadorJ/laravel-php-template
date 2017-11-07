@@ -60,6 +60,20 @@ cd nome-do-projeto/
 
 php artisan serve
 
+# Comando para reinstalar o composer/laravel no diretorio do projeto
+
+'primeiro deve acessar o diretorio do projeto'
+
+cd nome-do-projeto/
+
+'depois executar o comando'
+
+composer install
+
+# Comando para adicionar as migrations do diretorio ./database/migrations/ no MySQL
+
+php artisan migrate
+
 
 
 
