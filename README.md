@@ -1,7 +1,7 @@
 # laravel-php-template
 Template projeto com Laravel PHP
 
-Alguns passos para instalar o PHP completo com laravel
+Alguns passos para instalar o PHP completo e o framework Laravel
 
 # Atualizar repositorio para obter o PHP7.1
 
