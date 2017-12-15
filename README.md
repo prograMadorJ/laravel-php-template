@@ -102,6 +102,10 @@ DB_PASSWORD=root               << aqui é a senha do banco de dados
 
 php artisan migrate
 
+# Comando para aplicar seeders
+
+php artisan db:seed
+
 # Comando para iniciar o servidor 
 
 'primeiro deve acessar o diretorio do projeto'
