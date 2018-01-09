@@ -50,6 +50,14 @@ ln -s ~/.config/composer/vendor/laravel/installer/laravel laravel-link
 
 laravel new nome-do-projeto
 
+# Comando para instalar o Composer direto no diretório quando não usar o comando anterior
+
+composer install
+
+# Instalar o node no diretório do projeto
+
+npm install ou use npm i
+
 # Acessar o MySQL e criar um banco de dados para o projeto
 
 mysql -uroot -p
